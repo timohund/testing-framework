@@ -4,5 +4,5 @@ if (!file_exists($autoloadFilepath)) {
     $autoloadFilepath = '{ntfRoot}.Build/vendor/autoload.php';
 }
 require $autoloadFilepath;
-\Nimut\TestingFramework\Bootstrap\RequestBootstrap::setGlobalVariables({arguments});
-\Nimut\TestingFramework\Bootstrap\RequestBootstrap::executeAndOutput();
+\IchHabRecht\TestingFramework\Bootstrap\RequestBootstrap::setGlobalVariables({arguments});
+\IchHabRecht\TestingFramework\Bootstrap\RequestBootstrap::executeAndOutput();

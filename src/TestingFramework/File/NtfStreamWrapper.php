@@ -1,8 +1,8 @@
 <?php
-namespace Nimut\TestingFramework\File;
+namespace IchHabRecht\TestingFramework\File;
 
 /*
- * This file is part of the NIMUT testing-framework project.
+ * This file is part of the IchHabRecht testing-framework project.
  *
  * It is free software; you can redistribute it and/or modify it under
  * the terms of the GNU General Public License, either version 2
@@ -11,7 +11,7 @@ namespace Nimut\TestingFramework\File;
  * For the full copyright and license information, please read
  * LICENSE file that was distributed with this source code.
  */
-use Nimut\TestingFramework\Exception\NtfStreamException;
+use IchHabRecht\TestingFramework\Exception\NtfStreamException;
 
 /**
  * Read-only stream wrapper to get testing fixtures with ntf:// protocol
@@ -77,7 +77,7 @@ class NtfStreamWrapper
     {
         if (!self::$registered) {
             if (in_array(self::$scheme, stream_get_wrappers())) {
-                throw new NtfStreamException('The stream wrapper for the protocol ' . self::$scheme . ' was not registered with the nimut/testing-framework.');
+                throw new NtfStreamException('The stream wrapper for the protocol ' . self::$scheme . ' was not registered with the ichhaberecht/testing-framework.');
             }
 
             return;

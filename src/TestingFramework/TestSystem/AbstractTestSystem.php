@@ -1,8 +1,8 @@
 <?php
-namespace Nimut\TestingFramework\TestSystem;
+namespace IchHabRecht\TestingFramework\TestSystem;
 
 /*
- * This file is part of the NIMUT testing-framework project.
+ * This file is part of the IchHabRecht testing-framework project.
  *
  * It is free software; you can redistribute it and/or modify it under
  * the terms of the GNU General Public License, either version 2
@@ -12,8 +12,8 @@ namespace Nimut\TestingFramework\TestSystem;
  * LICENSE file that was distributed with this source code.
  */
 
-use Nimut\TestingFramework\Exception\Exception;
-use Nimut\TestingFramework\File\NtfStreamWrapper;
+use IchHabRecht\TestingFramework\Exception\Exception;
+use IchHabRecht\TestingFramework\File\NtfStreamWrapper;
 use TYPO3\CMS\Core\Core\Bootstrap;
 use TYPO3\CMS\Core\Database\DatabaseConnection;
 use TYPO3\CMS\Core\Utility\GeneralUtility;

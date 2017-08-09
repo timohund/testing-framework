@@ -1,8 +1,8 @@
 <?php
-namespace Nimut\TestingFramework\Bootstrap;
+namespace IchHabRecht\TestingFramework\Bootstrap;
 
 /*
- * This file is part of the NIMUT testing-framework project.
+ * This file is part of the IchHabRecht testing-framework project.
  *
  * It was taken from the TYPO3 CMS project (www.typo3.org).
  *
@@ -14,7 +14,7 @@ namespace Nimut\TestingFramework\Bootstrap;
  * LICENSE file that was distributed with this source code.
  */
 
-use Nimut\TestingFramework\File\NtfStreamWrapper;
+use IchHabRecht\TestingFramework\File\NtfStreamWrapper;
 use TYPO3\CMS\Core\Configuration\ConfigurationManager;
 use TYPO3\CMS\Core\Core\Bootstrap as CoreBootstrap;
 

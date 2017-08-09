@@ -1,9 +1,8 @@
 <?php
 $header = <<<'EOF'
-This file is part of the NIMUT testing-framework project.
+This file is part of the IchHabRecht testing-framework project.
 
 (c) Nicole Cordes <typo3@cordes.co>
-(c) Helmut Hummel <info@helhum.io>
 EOF;
 
 return PhpCsFixer\Config::create()

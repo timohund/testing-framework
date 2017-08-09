@@ -1,8 +1,8 @@
 <?php
-namespace Nimut\TestingFramework\TestSystem;
+namespace IchHabRecht\TestingFramework\TestSystem;
 
 /*
- * This file is part of the NIMUT testing-framework project.
+ * This file is part of the IchHabRecht testing-framework project.
  *
  * It is free software; you can redistribute it and/or modify it under
  * the terms of the GNU General Public License, either version 2
@@ -14,7 +14,7 @@ namespace Nimut\TestingFramework\TestSystem;
 
 use Doctrine\DBAL\DBALException;
 use Doctrine\DBAL\DriverManager;
-use Nimut\TestingFramework\Exception\Exception;
+use IchHabRecht\TestingFramework\Exception\Exception;
 use TYPO3\CMS\Core\Database\ConnectionPool;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 

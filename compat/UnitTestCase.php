@@ -2,7 +2,7 @@
 namespace TYPO3\CMS\Core\Tests;
 
 /*
- * This file is part of the NIMUT testing-framework project.
+ * This file is part of the IchHabRecht testing-framework project.
  *
  * It is free software; you can redistribute it and/or modify it under
  * the terms of the GNU General Public License, either version 2
@@ -15,6 +15,6 @@ namespace TYPO3\CMS\Core\Tests;
 /**
  * @deprecated will be removed once TYPO3 9 LTS is released
  */
-abstract class UnitTestCase extends \Nimut\TestingFramework\TestCase\UnitTestCase
+abstract class UnitTestCase extends \IchHabRecht\TestingFramework\TestCase\UnitTestCase
 {
 }

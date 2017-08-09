@@ -1,8 +1,8 @@
 <?php
-namespace Nimut\TestingFramework\MockObject;
+namespace IchHabRecht\TestingFramework\MockObject;
 
 /*
- * This file is part of the NIMUT testing-framework project.
+ * This file is part of the IchHabRecht testing-framework project.
  *
  * It was taken from the TYPO3 CMS project (www.typo3.org).
  *
@@ -15,7 +15,7 @@ namespace Nimut\TestingFramework\MockObject;
  */
 
 /**
- * This interface defines the methods provided by \Nimut\TestingFramework\TestCase\BaseTestCase::getAccessibleMock
+ * This interface defines the methods provided by \IchHabRecht\TestingFramework\TestCase\BaseTestCase::getAccessibleMock
  */
 interface AccessibleMockObjectInterface
 {

@@ -1,8 +1,8 @@
 <?php
-namespace Nimut\TestingFramework\TestCase;
+namespace IchHabRecht\TestingFramework\TestCase;
 
 /*
- * This file is part of the NIMUT testing-framework project.
+ * This file is part of the IchHabRecht testing-framework project.
  *
  * It was taken from the TYPO3 CMS project (www.typo3.org).
  *
@@ -14,7 +14,7 @@ namespace Nimut\TestingFramework\TestCase;
  * LICENSE file that was distributed with this source code.
  */
 
-use Nimut\TestingFramework\MockObject\AccessibleMockObjectInterface;
+use IchHabRecht\TestingFramework\MockObject\AccessibleMockObjectInterface;
 
 /**
  * The mother of all test cases
@@ -164,7 +164,7 @@ abstract class AbstractTestCase extends \PHPUnit_Framework_TestCase
 
         eval(
             $abstractModifier . 'class ' . $accessibleClassName .
-            ' extends ' . $className . ' implements Nimut\\TestingFramework\\MockObject\\AccessibleMockObjectInterface {' .
+            ' extends ' . $className . ' implements IchHabRecht\\TestingFramework\\MockObject\\AccessibleMockObjectInterface {' .
             'public function _call($methodName) {' .
             'if ($methodName === \'\') {' .
             'throw new \InvalidArgumentException(\'$methodName must not be empty.\', 1334663993);' .

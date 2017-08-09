@@ -2,7 +2,7 @@
 namespace TYPO3\CMS\Fluid\Tests\Unit\Core\Rendering;
 
 /*
- * This file is part of the NIMUT testing-framework project.
+ * This file is part of the IchHabRecht testing-framework project.
  *
  * It is free software; you can redistribute it and/or modify it under
  * the terms of the GNU General Public License, either version 2
@@ -15,6 +15,6 @@ namespace TYPO3\CMS\Fluid\Tests\Unit\Core\Rendering;
 /**
  * @deprecated will be removed once TYPO3 9 LTS is released
  */
-class RenderingContextFixture extends \Nimut\TestingFramework\Rendering\RenderingContextFixture
+class RenderingContextFixture extends \IchHabRecht\TestingFramework\Rendering\RenderingContextFixture
 {
 }

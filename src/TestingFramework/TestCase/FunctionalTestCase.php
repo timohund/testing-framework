@@ -1,8 +1,8 @@
 <?php
-namespace Nimut\TestingFramework\TestCase;
+namespace IchHabRecht\TestingFramework\TestCase;
 
 /*
- * This file is part of the NIMUT testing-framework project.
+ * This file is part of the IchHabRecht testing-framework project.
  *
  * It was taken from the TYPO3 CMS project (www.typo3.org).
  *
@@ -14,10 +14,10 @@ namespace Nimut\TestingFramework\TestCase;
  * LICENSE file that was distributed with this source code.
  */
 
-use Nimut\TestingFramework\Exception\Exception;
-use Nimut\TestingFramework\Http\Response;
-use Nimut\TestingFramework\TestSystem\AbstractTestSystem;
-use Nimut\TestingFramework\TestSystem\TestSystemFactory;
+use IchHabRecht\TestingFramework\Exception\Exception;
+use IchHabRecht\TestingFramework\Http\Response;
+use IchHabRecht\TestingFramework\TestSystem\AbstractTestSystem;
+use IchHabRecht\TestingFramework\TestSystem\TestSystemFactory;
 use TYPO3\CMS\Core\Authentication\BackendUserAuthentication;
 use TYPO3\CMS\Core\Database\ConnectionPool;
 use TYPO3\CMS\Core\Database\DatabaseConnection;

@@ -1,8 +1,8 @@
 <?php
-namespace Nimut\TestingFramework\TestCase;
+namespace IchHabRecht\TestingFramework\TestCase;
 
 /*
- * This file is part of the NIMUT testing-framework project.
+ * This file is part of the IchHabRecht testing-framework project.
  *
  * It was taken from the TYPO3 CMS project (www.typo3.org).
  *
@@ -52,7 +52,7 @@ abstract class UnitTestCase extends AbstractTestCase
             $declaringClass = $property->getDeclaringClass()->getName();
             if (
                 !$property->isStatic()
-                && $declaringClass !== 'Nimut\\TestingFramework\\TestCase\\AbstractTestCase'
+                && $declaringClass !== 'IchHabRecht\\TestingFramework\\TestCase\\AbstractTestCase'
                 && $declaringClass !== get_class($this)
                 && strpos($property->getDeclaringClass()->getName(), 'PHPUnit_') !== 0
             ) {

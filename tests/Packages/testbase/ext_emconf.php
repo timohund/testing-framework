@@ -12,7 +12,7 @@
 
 $EM_CONF[$_EXTKEY] = array (
   'title' => 'Testbase extension',
-  'description' => 'Testbase extension for nimut/testing-framework',
+  'description' => 'Testbase extension for ichhaberecht/testing-framework',
   'category' => 'misc',
   'author' => 'Nicole Cordes, Helmut Hummel',
   'author_email' => 'cordes@cps-it.de, info@helhum.io',

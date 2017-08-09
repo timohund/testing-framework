@@ -1,8 +1,8 @@
 <?php
-namespace Nimut\TestingFramework\TestCase;
+namespace IchHabRecht\TestingFramework\TestCase;
 
 /*
- * This file is part of the NIMUT testing-framework project.
+ * This file is part of the IchHabRecht testing-framework project.
  *
  * It was taken from the TYPO3 CMS project (www.typo3.org).
  *
@@ -14,8 +14,8 @@ namespace Nimut\TestingFramework\TestCase;
  * LICENSE file that was distributed with this source code.
  */
 
-use Nimut\TestingFramework\MockObject\AccessibleMockObjectInterface;
-use Nimut\TestingFramework\Rendering\RenderingContextFixture;
+use IchHabRecht\TestingFramework\MockObject\AccessibleMockObjectInterface;
+use IchHabRecht\TestingFramework\Rendering\RenderingContextFixture;
 use Prophecy\Argument;
 use Prophecy\Prophecy\ObjectProphecy;
 use TYPO3\CMS\Extbase\Mvc\Controller\ControllerContext;
@@ -115,7 +115,7 @@ abstract class ViewHelperBaseTestcase extends UnitTestCase
             $this->tagBuilder = $this->getMock('TYPO3\\CMS\\Fluid\\Core\\ViewHelper\\TagBuilder');
         }
 
-        $this->renderingContext = $this->getAccessibleMock('Nimut\\TestingFramework\\Rendering\\RenderingContextFixture', array('getControllerContext'));
+        $this->renderingContext = $this->getAccessibleMock('IchHabRecht\\TestingFramework\\Rendering\\RenderingContextFixture', array('getControllerContext'));
         $this->renderingContext->expects($this->any())->method('getControllerContext')->willReturn($this->controllerContext);
         if (is_callable(array($this->renderingContext, 'setVariableProvider'))) {
             $this->renderingContext->setVariableProvider($this->templateVariableContainer);

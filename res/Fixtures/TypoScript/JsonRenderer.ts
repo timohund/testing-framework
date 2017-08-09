@@ -26,7 +26,7 @@ lib.watcherDataObject {
     1 = LOAD_REGISTER
     1.watcher.dataWrap = |
     2 = USER
-    2.userFunc = Nimut\TestingFramework\Frontend\Collector->addRecordData
+    2.userFunc = IchHabRecht\TestingFramework\Frontend\Collector->addRecordData
     99 = RESTORE_REGISTER
 }
 
@@ -35,7 +35,7 @@ lib.watcherFileObject {
     1 = LOAD_REGISTER
     1.watcher.dataWrap = |
     2 = USER
-    2.userFunc = Nimut\TestingFramework\Frontend\Collector->addFileData
+    2.userFunc = IchHabRecht\TestingFramework\Frontend\Collector->addFileData
     99 = RESTORE_REGISTER
 }
 
@@ -46,7 +46,7 @@ page {
         1 = LOAD_REGISTER
         1.watcher.dataWrap = pages:{field:uid}
         2 = USER
-        2.userFunc = Nimut\TestingFramework\Frontend\Collector->addRecordData
+        2.userFunc = IchHabRecht\TestingFramework\Frontend\Collector->addRecordData
         10 = CONTENT
         10 {
             stdWrap.required = 1
@@ -105,11 +105,11 @@ page {
             }
         }
 
-        stdWrap.postUserFunc = Nimut\TestingFramework\Frontend\Collector->attachSection
+        stdWrap.postUserFunc = IchHabRecht\TestingFramework\Frontend\Collector->attachSection
         stdWrap.postUserFunc.as = Default
     }
 
-    stdWrap.postUserFunc = Nimut\TestingFramework\Frontend\Renderer->renderSections
+    stdWrap.postUserFunc = IchHabRecht\TestingFramework\Frontend\Renderer->renderSections
 }
 
 [globalVar = GP:L = 1]

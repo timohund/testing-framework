@@ -1,8 +1,8 @@
 <?php
-namespace Nimut\Testbase\Tests\Unit\Compat;
+namespace IchHabRecht\Testbase\Tests\Unit\Compat;
 
 /*
- * This file is part of the NIMUT testing-framework project.
+ * This file is part of the IchHabRecht testing-framework project.
  *
  * It is free software; you can redistribute it and/or modify it under
  * the terms of the GNU General Public License, either version 2

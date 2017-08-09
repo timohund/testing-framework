@@ -1,8 +1,8 @@
 <?php
-namespace Nimut\Testbase\Tests\Unit\Compat\ViewHelpers;
+namespace IchHabRecht\Testbase\Tests\Unit\Compat\ViewHelpers;
 
 /*
- * This file is part of the NIMUT testing-framework project.
+ * This file is part of the IchHabRecht testing-framework project.
  *
  * It is free software; you can redistribute it and/or modify it under
  * the terms of the GNU General Public License, either version 2
@@ -12,7 +12,7 @@ namespace Nimut\Testbase\Tests\Unit\Compat\ViewHelpers;
  * LICENSE file that was distributed with this source code.
  */
 
-use Nimut\Testbase\ViewHelpers\RenderChildrenViewHelper;
+use IchHabRecht\Testbase\ViewHelpers\RenderChildrenViewHelper;
 use TYPO3\CMS\Fluid\Tests\Unit\ViewHelpers\ViewHelperBaseTestcase;
 
 class RenderChildrenViewHelperTest extends ViewHelperBaseTestcase
@@ -25,7 +25,7 @@ class RenderChildrenViewHelperTest extends ViewHelperBaseTestcase
     protected function setUp()
     {
         parent::setUp();
-        $this->viewHelper = $this->getMock('Nimut\\Testbase\\ViewHelpers\\RenderChildrenViewHelper', array('renderChildren'));
+        $this->viewHelper = $this->getMock('IchHabRecht\\Testbase\\ViewHelpers\\RenderChildrenViewHelper', array('renderChildren'));
         $this->injectDependenciesIntoViewHelper($this->viewHelper);
         $this->viewHelper->initializeArguments();
     }

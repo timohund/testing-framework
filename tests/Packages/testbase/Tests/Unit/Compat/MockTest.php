@@ -1,8 +1,8 @@
 <?php
-namespace Nimut\Testbase\Tests\Unit\Compat;
+namespace IchHabRecht\Testbase\Tests\Unit\Compat;
 
 /*
- * This file is part of the NIMUT testing-framework project.
+ * This file is part of the IchHabRecht testing-framework project.
  *
  * It is free software; you can redistribute it and/or modify it under
  * the terms of the GNU General Public License, either version 2
@@ -12,7 +12,7 @@ namespace Nimut\Testbase\Tests\Unit\Compat;
  * LICENSE file that was distributed with this source code.
  */
 
-use Nimut\Testbase\Mock;
+use IchHabRecht\Testbase\Mock;
 use TYPO3\CMS\Core\Tests\AccessibleObjectInterface;
 use TYPO3\CMS\Core\Tests\UnitTestCase;
 
@@ -24,7 +24,7 @@ class MockTest extends UnitTestCase
     public function getMockReturnsMock()
     {
         /** @var Mock|\PHPUnit_Framework_MockObject_MockObject $subjectMock */
-        $subjectMock = $this->getMock('Nimut\\Testbase\\Mock', array('dummy'), array('foo'));
+        $subjectMock = $this->getMock('IchHabRecht\\Testbase\\Mock', array('dummy'), array('foo'));
 
         $this->assertSame('foo', $subjectMock->getAProtectedProperty());
     }
@@ -35,7 +35,7 @@ class MockTest extends UnitTestCase
     public function getAccessibleMockReturnsAccessibleMock()
     {
         /** @var Mock|\PHPUnit_Framework_MockObject_MockObject|AccessibleObjectInterface $subjectAccessibleMock */
-        $subjectAccessibleMock = $this->getAccessibleMock('Nimut\\Testbase\\Mock', array('dummy'));
+        $subjectAccessibleMock = $this->getAccessibleMock('IchHabRecht\\Testbase\\Mock', array('dummy'));
         $subjectAccessibleMock->_set('aProtectedProperty', 'foo');
 
         $this->assertSame('foo', $subjectAccessibleMock->getAProtectedProperty());

@@ -1,8 +1,8 @@
 <?php
-namespace Nimut\TestingFramework\Rendering;
+namespace IchHabRecht\TestingFramework\Rendering;
 
 /*
- * This file is part of the NIMUT testing-framework project.
+ * This file is part of the IchHabRecht testing-framework project.
  *
  * It was taken from the TYPO3 CMS project (www.typo3.org).
  *
