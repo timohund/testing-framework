@@ -1,7 +1,7 @@
 <?php
-$autoloadFilepath = '{ntfRoot}../../autoload.php';
+$autoloadFilepath = '{tfRoot}../../autoload.php';
 if (!file_exists($autoloadFilepath)) {
-    $autoloadFilepath = '{ntfRoot}.Build/vendor/autoload.php';
+    $autoloadFilepath = '{tfRoot}.Build/vendor/autoload.php';
 }
 require $autoloadFilepath;
 \IchHabRecht\TestingFramework\Bootstrap\RequestBootstrap::setGlobalVariables({arguments});

@@ -139,7 +139,7 @@ abstract class FunctionalTestCase extends AbstractTestCase
      *
      * @var string
      */
-    protected $backendUserFixture = 'ntf://Database/be_users.xml';
+    protected $backendUserFixture = 'tf://Database/be_users.xml';
 
     /**
      * Private utility class used in setUp() and tearDown(). Do NOT use in test cases!
@@ -391,12 +391,12 @@ abstract class FunctionalTestCase extends AbstractTestCase
             'requestUrl' => 'http://localhost/?id=' . $pageId . '&L=' . $languageId . $additionalParameter,
         );
 
-        $template = new \Text_Template('ntf://Frontend/Request.tpl');
+        $template = new \Text_Template('tf://Frontend/Request.tpl');
         $template->setVar(
             array(
                 'arguments' => var_export($arguments, true),
                 'originalRoot' => ORIGINAL_ROOT,
-                'ntfRoot' => __DIR__ . '/../../../',
+                'tfRoot' => __DIR__ . '/../../../',
             )
         );
 

@@ -45,6 +45,7 @@
     "autoload": {
         "psr-4": {
             "IchHabRecht\\TestingFramework\\": "src/TestingFramework/",
+            "IchHabRecht\\TestingFramework\\File\\": "compat/File/",
             "TYPO3\\CMS\\Core\\Tests\\": "compat/",
             "TYPO3\\CMS\\Core\\Tests\\Functional\\Framework\\": "compat/",
             "TYPO3\\CMS\\Fluid\\Tests\\": "compat/"

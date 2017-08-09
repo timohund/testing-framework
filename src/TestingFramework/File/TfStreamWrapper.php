@@ -14,9 +14,9 @@ namespace IchHabRecht\TestingFramework\File;
 use IchHabRecht\TestingFramework\Exception\NtfStreamException;
 
 /**
- * Read-only stream wrapper to get testing fixtures with ntf:// protocol
+ * Read-only stream wrapper to get testing fixtures with tf:// protocol
  */
-class NtfStreamWrapper
+class TfStreamWrapper
 {
     /**
      * @var resource
@@ -36,7 +36,7 @@ class NtfStreamWrapper
     /**
      * @var string
      */
-    protected static $scheme = 'ntf';
+    protected static $scheme = 'tf';
 
     /**
      * Method to register the stream wrapper

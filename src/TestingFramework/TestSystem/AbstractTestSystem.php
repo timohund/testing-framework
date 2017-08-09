@@ -14,6 +14,7 @@ namespace IchHabRecht\TestingFramework\TestSystem;
 
 use IchHabRecht\TestingFramework\Exception\Exception;
 use IchHabRecht\TestingFramework\File\NtfStreamWrapper;
+use IchHabRecht\TestingFramework\File\TfStreamWrapper;
 use TYPO3\CMS\Core\Core\Bootstrap;
 use TYPO3\CMS\Core\Database\DatabaseConnection;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
@@ -125,6 +126,7 @@ abstract class AbstractTestSystem
         array $configurationToUse,
         array $additionalFoldersToCreate
     ) {
+        $this->registerTfStreamWrapper();
         $this->registerNtfStreamWrapper();
         $this->setTypo3Context();
         if ($this->recentTestSystemExists()) {
@@ -164,6 +166,16 @@ abstract class AbstractTestSystem
     public function getSystemPath()
     {
         return $this->systemPath;
+    }
+
+    /**
+     * Registers the NtfStreamWrapper for tf:// protocol
+     *
+     * @return void
+     */
+    protected function registerTfStreamWrapper()
+    {
+        TfStreamWrapper::register();
     }
 
     /**

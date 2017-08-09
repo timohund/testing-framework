@@ -15,6 +15,7 @@ namespace IchHabRecht\TestingFramework\Bootstrap;
  */
 
 use IchHabRecht\TestingFramework\File\NtfStreamWrapper;
+use IchHabRecht\TestingFramework\File\TfStreamWrapper;
 use TYPO3\CMS\Core\Configuration\ConfigurationManager;
 use TYPO3\CMS\Core\Core\Bootstrap as CoreBootstrap;
 
@@ -77,6 +78,7 @@ abstract class AbstractBootstrap
         $this->initializeConfiguration();
         $this->initializeCachingHandling();
         $this->initializePackageManager();
+        $this->registerTfStreamWrapper();
         $this->registerNtfStreamWrapper();
     }
 
@@ -241,7 +243,17 @@ abstract class AbstractBootstrap
     }
 
     /**
-     * Registers the NtfStreamWrapper for ntf:// protocol
+     * Registers the tfStreamWrapper for tf:// protocol
+     *
+     * @return void
+     */
+    protected function registerTfStreamWrapper()
+    {
+        TfStreamWrapper::register();
+    }
+
+    /**
+     * Registers the tfStreamWrapper for ntf:// protocol
      *
      * @return void
      */

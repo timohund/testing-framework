@@ -38,8 +38,8 @@ class FunctionalTest extends FunctionalTestCase
      */
     public function loadPagesDatabaseFixtures()
     {
-        $this->importDataSet('ntf://Database/pages.xml');
-        $this->importDataSet('ntf://Database/pages_language_overlay.xml');
+        $this->importDataSet('tf://Database/pages.xml');
+        $this->importDataSet('tf://Database/pages_language_overlay.xml');
 
         $this->assertSame(7, $this->getDatabaseConnection()->exec_SELECTcountRows('*', 'pages'));
         $this->assertSame(2, $this->getDatabaseConnection()->exec_SELECTcountRows('*', 'pages_language_overlay'));
@@ -50,9 +50,9 @@ class FunctionalTest extends FunctionalTestCase
      */
     public function frontendIsRendered()
     {
-        $this->importDataSet('ntf://Database/pages.xml');
-        $this->importDataSet('ntf://Database/tt_content.xml');
-        $this->setUpFrontendRootPage(1, array('ntf://TypoScript/JsonRenderer.ts'));
+        $this->importDataSet('tf://Database/pages.xml');
+        $this->importDataSet('tf://Database/tt_content.xml');
+        $this->setUpFrontendRootPage(1, array('tf://TypoScript/JsonRenderer.ts'));
 
         $response = $this->getFrontendResponse(1);
 

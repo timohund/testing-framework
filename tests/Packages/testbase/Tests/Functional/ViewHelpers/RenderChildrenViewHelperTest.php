@@ -35,7 +35,7 @@ class RenderChildrenViewHelperTest extends FunctionalTestCase
      */
     public function ownTypoScripFileIsUsedInFrontendRequest()
     {
-        $this->importDataSet('ntf://Database/pages.xml');
+        $this->importDataSet('tf://Database/pages.xml');
 
         $this->setUpFrontendRootPage(1, array('EXT:testbase/Tests/Functional/Fixtures/TypoScript/Page.ts'));
 
